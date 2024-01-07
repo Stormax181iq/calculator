@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+  --main-font: 'Josefin Sans', sans-serif;
+  --light-accent-color: #f5d7b0;
+  --hard-accent-color: #f5ab49;
+  --background-color: #7e827f;
+  --displayer-background: #a9c7b1;
+}
+
+#calculator-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  grid-auto-rows: minmax(4rem, auto);
+  max-width: 20rem;
+  margin: 4rem auto;
+  background-color: var(--background-color);
+  padding: 2rem;
+  border-radius: 1.8rem;
+}
+
+#displayer {
+  display: inline-flex;
+  grid-column: 1 / 5;
+  background-color: var(--displayer-background);
+  border-radius: 1.8rem;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: end;
+}
+
+.utility-btn {
+  background-color: var(--light-accent-color);
+  font-size: 1.5rem;
+}
+
+#calculator-wrapper>button {
+  font-family: var(--main-font);
+}
+
+.calc-btn {
+  font-size: 2rem;
+}
+
+#calculator-wrapper>button:hover {
+  box-shadow: inset var(--background-color) 0px 0px 10px -2px;
+}
+
+.arithmetic-btn {
+  background-color: var(--light-accent-color);
+}
+
+.big {
+  font-size: 2.5rem;
+}
+
+.highlighted-btn {
+  background-color: var(--hard-accent-color);
+}
+
+body {
+  background-color: black;
+  font-family: var(--main-font);
+  font-size: 2rem;
+}
