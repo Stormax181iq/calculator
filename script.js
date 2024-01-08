@@ -1,6 +1,8 @@
 const calculator = document.getElementById("calculator-wrapper");
 const displayer = document.getElementById("displayer");
 
+console.log("Git test");
+
 calculator.addEventListener('click', function (e) {
   if (e.target.classList.contains('calc-btn')) {
     if (e.target.innerText === "=") {
